@@ -1,5 +1,5 @@
 {
-  "checksum": "1b8b04f596903f3d26e1806561b5db0b36b9aee71b43e75d4a8e6a21c5160c4c",
+  "checksum": "f3070b4d7a2ee31c65682e292acf7a15cb4987570d54c8bc312f9d746fff8801",
   "crates": {
     "addr2line 0.21.0": {
       "name": "addr2line",
@@ -267,13 +267,6 @@
         "compile_data_glob": [
           "**"
         ],
-        "crate_features": {
-          "common": [
-            "default",
-            "unnamed-tmpfile"
-          ],
-          "selects": {}
-        },
         "deps": {
           "common": [
             {
@@ -537,12 +530,6 @@
         "compile_data_glob": [
           "**"
         ],
-        "crate_features": {
-          "common": [
-            "std"
-          ],
-          "selects": {}
-        },
         "deps": {
           "common": [
             {
@@ -1055,12 +1042,6 @@
         "compile_data_glob": [
           "**"
         ],
-        "crate_features": {
-          "common": [
-            "std"
-          ],
-          "selects": {}
-        },
         "deps": {
           "common": [
             {
@@ -1153,11 +1134,9 @@
         ],
         "crate_features": {
           "common": [
-            "alloc",
             "block-buffer",
             "core-api",
-            "default",
-            "std"
+            "default"
           ],
           "selects": {}
         },
@@ -1458,14 +1437,6 @@
         "compile_data_glob": [
           "**"
         ],
-        "crate_features": {
-          "common": [
-            "alloc",
-            "default",
-            "std"
-          ],
-          "selects": {}
-        },
         "edition": "2018",
         "version": "2.0.1"
       },
@@ -2152,12 +2123,6 @@
         "compile_data_glob": [
           "**"
         ],
-        "crate_features": {
-          "common": [
-            "std"
-          ],
-          "selects": {}
-        },
         "deps": {
           "common": [
             {
@@ -2332,14 +2297,6 @@
         "compile_data_glob": [
           "**"
         ],
-        "crate_features": {
-          "common": [
-            "default",
-            "unicode",
-            "unicode-segmentation"
-          ],
-          "selects": {}
-        },
         "deps": {
           "common": [
             {
@@ -2763,12 +2720,97 @@
           "**"
         ],
         "crate_features": {
-          "common": [
-            "default",
-            "extra_traits",
-            "std"
-          ],
-          "selects": {}
+          "common": [],
+          "selects": {
+            "aarch64-apple-darwin": [
+              "default",
+              "std"
+            ],
+            "aarch64-apple-ios": [
+              "default",
+              "std"
+            ],
+            "aarch64-apple-ios-sim": [
+              "default",
+              "std"
+            ],
+            "aarch64-fuchsia": [
+              "default",
+              "std"
+            ],
+            "aarch64-linux-android": [
+              "default",
+              "std"
+            ],
+            "aarch64-unknown-linux-gnu": [
+              "default",
+              "std"
+            ],
+            "arm-unknown-linux-gnueabi": [
+              "default",
+              "std"
+            ],
+            "armv7-linux-androideabi": [
+              "default",
+              "std"
+            ],
+            "armv7-unknown-linux-gnueabi": [
+              "default",
+              "std"
+            ],
+            "i686-apple-darwin": [
+              "default",
+              "std"
+            ],
+            "i686-linux-android": [
+              "default",
+              "std"
+            ],
+            "i686-unknown-freebsd": [
+              "default",
+              "std"
+            ],
+            "i686-unknown-linux-gnu": [
+              "default",
+              "std"
+            ],
+            "powerpc-unknown-linux-gnu": [
+              "default",
+              "std"
+            ],
+            "s390x-unknown-linux-gnu": [
+              "default",
+              "std"
+            ],
+            "wasm32-wasi": [
+              "default",
+              "std"
+            ],
+            "x86_64-apple-darwin": [
+              "default",
+              "std"
+            ],
+            "x86_64-apple-ios": [
+              "default",
+              "std"
+            ],
+            "x86_64-fuchsia": [
+              "default",
+              "std"
+            ],
+            "x86_64-linux-android": [
+              "default",
+              "std"
+            ],
+            "x86_64-unknown-freebsd": [
+              "default",
+              "std"
+            ],
+            "x86_64-unknown-linux-gnu": [
+              "default",
+              "std"
+            ]
+          }
         },
         "deps": {
           "common": [
@@ -2938,16 +2980,6 @@
         "compile_data_glob": [
           "**"
         ],
-        "crate_features": {
-          "common": [
-            "elf",
-            "errno",
-            "general",
-            "ioctl",
-            "no_std"
-          ],
-          "selects": {}
-        },
         "edition": "2021",
         "version": "0.4.12"
       },
@@ -3302,15 +3334,6 @@
         "compile_data_glob": [
           "**"
         ],
-        "crate_features": {
-          "common": [
-            "default",
-            "feature",
-            "fs",
-            "user"
-          ],
-          "selects": {}
-        },
         "deps": {
           "common": [
             {
@@ -3750,10 +3773,97 @@
             "alloc",
             "default",
             "race",
-            "std",
-            "unstable"
+            "std"
           ],
-          "selects": {}
+          "selects": {
+            "aarch64-apple-darwin": [
+              "unstable"
+            ],
+            "aarch64-apple-ios": [
+              "unstable"
+            ],
+            "aarch64-apple-ios-sim": [
+              "unstable"
+            ],
+            "aarch64-fuchsia": [
+              "unstable"
+            ],
+            "aarch64-linux-android": [
+              "unstable"
+            ],
+            "aarch64-pc-windows-msvc": [
+              "unstable"
+            ],
+            "aarch64-unknown-linux-gnu": [
+              "unstable"
+            ],
+            "arm-unknown-linux-gnueabi": [
+              "unstable"
+            ],
+            "armv7-linux-androideabi": [
+              "unstable"
+            ],
+            "armv7-unknown-linux-gnueabi": [
+              "unstable"
+            ],
+            "i686-apple-darwin": [
+              "unstable"
+            ],
+            "i686-linux-android": [
+              "unstable"
+            ],
+            "i686-pc-windows-msvc": [
+              "unstable"
+            ],
+            "i686-unknown-freebsd": [
+              "unstable"
+            ],
+            "i686-unknown-linux-gnu": [
+              "unstable"
+            ],
+            "powerpc-unknown-linux-gnu": [
+              "unstable"
+            ],
+            "riscv32imc-unknown-none-elf": [
+              "unstable"
+            ],
+            "riscv64gc-unknown-none-elf": [
+              "unstable"
+            ],
+            "s390x-unknown-linux-gnu": [
+              "unstable"
+            ],
+            "wasm32-unknown-unknown": [
+              "unstable"
+            ],
+            "wasm32-wasi": [
+              "unstable"
+            ],
+            "x86_64-apple-darwin": [
+              "unstable"
+            ],
+            "x86_64-apple-ios": [
+              "unstable"
+            ],
+            "x86_64-fuchsia": [
+              "unstable"
+            ],
+            "x86_64-linux-android": [
+              "unstable"
+            ],
+            "x86_64-pc-windows-msvc": [
+              "unstable"
+            ],
+            "x86_64-unknown-freebsd": [
+              "unstable"
+            ],
+            "x86_64-unknown-linux-gnu": [
+              "unstable"
+            ],
+            "x86_64-unknown-none": [
+              "unstable"
+            ]
+          }
         },
         "edition": "2021",
         "version": "1.18.0"
@@ -4224,13 +4334,6 @@
         "compile_data_glob": [
           "**"
         ],
-        "crate_features": {
-          "common": [
-            "simd",
-            "std"
-          ],
-          "selects": {}
-        },
         "edition": "2018",
         "version": "0.2.17"
       },
@@ -4371,18 +4474,6 @@
         "compile_data_glob": [
           "**"
         ],
-        "crate_features": {
-          "common": [
-            "alloc",
-            "default",
-            "getrandom",
-            "libc",
-            "rand_chacha",
-            "std",
-            "std_rng"
-          ],
-          "selects": {}
-        },
         "deps": {
           "common": [
             {
@@ -4433,12 +4524,6 @@
         "compile_data_glob": [
           "**"
         ],
-        "crate_features": {
-          "common": [
-            "std"
-          ],
-          "selects": {}
-        },
         "deps": {
           "common": [
             {
@@ -4482,14 +4567,6 @@
         "compile_data_glob": [
           "**"
         ],
-        "crate_features": {
-          "common": [
-            "alloc",
-            "getrandom",
-            "std"
-          ],
-          "selects": {}
-        },
         "deps": {
           "common": [
             {
@@ -4813,16 +4890,6 @@
         "compile_data_glob": [
           "**"
         ],
-        "crate_features": {
-          "common": [
-            "alloc",
-            "default",
-            "fs",
-            "std",
-            "use-libc-auxv"
-          ],
-          "selects": {}
-        },
         "deps": {
           "common": [
             {
@@ -5314,14 +5381,6 @@
         "compile_data_glob": [
           "**"
         ],
-        "crate_features": {
-          "common": [
-            "default",
-            "raw_value",
-            "std"
-          ],
-          "selects": {}
-        },
         "deps": {
           "common": [
             {
@@ -5428,13 +5487,6 @@
         "compile_data_glob": [
           "**"
         ],
-        "crate_features": {
-          "common": [
-            "default",
-            "std"
-          ],
-          "selects": {}
-        },
         "deps": {
           "common": [
             {
@@ -5845,14 +5897,9 @@
         "crate_features": {
           "common": [
             "_rt-tokio",
-            "any",
-            "default",
-            "json",
-            "macros",
             "migrate",
             "runtime-tokio",
             "runtime-tokio-rustls",
-            "sqlx-macros",
             "tls-rustls"
           ],
           "selects": {}
@@ -5909,16 +5956,13 @@
           "common": [
             "_rt-tokio",
             "_tls-rustls",
-            "any",
             "crc",
             "default",
-            "json",
             "migrate",
             "offline",
             "rustls",
             "rustls-pemfile",
             "serde",
-            "serde_json",
             "sha2",
             "tokio",
             "tokio-stream",
@@ -6106,16 +6150,6 @@
         "compile_data_glob": [
           "**"
         ],
-        "crate_features": {
-          "common": [
-            "_rt-tokio",
-            "_tls-rustls",
-            "default",
-            "json",
-            "migrate"
-          ],
-          "selects": {}
-        },
         "deps": {
           "common": [
             {
@@ -6171,17 +6205,6 @@
         "compile_data_glob": [
           "**"
         ],
-        "crate_features": {
-          "common": [
-            "_rt-tokio",
-            "_tls-rustls",
-            "default",
-            "json",
-            "migrate",
-            "tokio"
-          ],
-          "selects": {}
-        },
         "deps": {
           "common": [
             {
@@ -6382,10 +6405,6 @@
             {
               "id": "rsa 0.9.6",
               "target": "rsa"
-            },
-            {
-              "id": "serde 1.0.193",
-              "target": "serde"
             },
             {
               "id": "sha1 0.10.6",
@@ -6657,10 +6676,6 @@
               "target": "percent_encoding"
             },
             {
-              "id": "serde 1.0.193",
-              "target": "serde"
-            },
-            {
               "id": "sqlx-core 0.7.3",
               "target": "sqlx_core"
             },
@@ -6795,18 +6810,6 @@
         "compile_data_glob": [
           "**"
         ],
-        "crate_features": {
-          "common": [
-            "clone-impls",
-            "derive",
-            "full",
-            "parsing",
-            "printing",
-            "proc-macro",
-            "quote"
-          ],
-          "selects": {}
-        },
         "deps": {
           "common": [
             {
