@@ -1,0 +1,60 @@
+load("@rules_rust//rust:defs.bzl", "rust_binary")
+load("@crate_index//:defs.bzl", "aliases", "all_crate_deps")
+
+package(default_visibility = ["//visibility:public"])
+
+rust_binary(
+    name = "hello_world",
+    srcs = ["src/main.rs"],
+    aliases = aliases(),
+    edition = "2021",
+    proc_macro_deps = all_crate_deps(
+        proc_macro = True,
+    ),
+    deps = all_crate_deps(
+        normal = True,
+    ),
+)
+
+# load("@crate_index//:defs.bzl", "aliases", "all_crate_deps")
+# load("@rules_rust//rust:defs.bzl", "rust_doc", "rust_doc_test", "rust_binary", "rust_test")
+
+# # This library is configured for common case use. Feel free to add a version with different features if needed.
+# rust_proc_macro(
+#     name = "gandalf-macros",
+#     srcs = glob(["src/**/*.rs"]),
+#     aliases = aliases(),
+#     edition = "2021",
+#     proc_macro_deps = all_crate_deps(
+#         proc_macro = True,
+#     ),
+#     deps = all_crate_deps(
+#         normal = True,
+#     ),
+# )
+
+# rust_doc(
+#     name = "doc",
+#     crate = ":gandalf-macros",
+# )
+
+# rust_doc_test(
+#     name = "doc-test",
+#     crate = ":gandalf-macros",
+# )
+
+# rust_test(
+#     name = "unit_test",
+#     size = "small",
+#     aliases = aliases(
+#         normal_dev = True,
+#         proc_macro_dev = True,
+#     ),
+#     crate = ":gandalf-macros",
+#     proc_macro_deps = all_crate_deps(
+#         proc_macro_dev = True,
+#     ),
+#     deps = all_crate_deps(
+#         normal_dev = True,
+#     ),
+# )
